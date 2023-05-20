@@ -1,4 +1,10 @@
-site_name: Lua<sup>rt</sup> Academy
+site_name: Lua^rt^ Academy
 
 theme:
   name: material
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
