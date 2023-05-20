@@ -2,7 +2,7 @@ site_name: LuaRT Academy
 
 theme:
   name: material
-  font: Albert Sans
+  font: Finlandica
   palette:
     primary: blue
     accent: amber
