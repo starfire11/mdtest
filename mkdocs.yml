@@ -1,7 +1,12 @@
-site_name: Lua^rt^ Academy
+site_name: LuaRT Academy
 
 theme:
   name: material
+  palette:
+    primary: blue
+    accent: amber
+  icon:
+    logo: :material-school:
 
 markdown_extensions:
   - attr_list
