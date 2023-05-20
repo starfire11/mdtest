@@ -2,7 +2,7 @@ site_name: LuaRT Academy
 
 theme:
   name: material
-  font: Finlandica
+  font: Yaldevi
   palette:
     primary: blue
     accent: amber
