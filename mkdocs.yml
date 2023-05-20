@@ -2,7 +2,7 @@ site_name: LuaRT Academy
 
 theme:
   name: material
-  font: Inter Tight
+  font: Finlandica
   palette:
     primary: blue
     accent: amber
