@@ -5,7 +5,7 @@ This approach involves downloading Lua<sup style="color:#FFB300">rt</sup> direct
 
 * **Manual installation**  
 This method offers more customization for advanced users. It involves downloading Lua<sup style="color:#FFB300">rt</sup> sources and manual compilation. This is a complex installation method and should not be recommended for newcomers.
-
+#  
 # Installation with Lua<sup style="color:#FFB300">rt</sup> installer
 
 This method is rather simple, thanks to its specific Windows installer (built with Lua<sup style="color:#FFB300">rt</sup> !).
@@ -82,5 +82,6 @@ If everything went right :
 * Lua<sup>rt</sup> additional modules will be generated in the `/modules` folder
 ##  
 ## Additional setup
-Once compiled, you should update your `PATH` environment variable with the location of the Lua<sup>rt</sup> `\bin` folder.
+Once compiled, you should update your `PATH` environment variable with the location of the Lua<sup>rt</sup> `\bin` folder.  
+  
 You should set file associations with `.lua` and `.wlua` extensions too, to be able to run Lua<sup>rt</sup> from the Windows explorer. 
