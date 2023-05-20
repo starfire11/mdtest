@@ -1,0 +1,538 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+        <link rel="next" href="../first_steps/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.14">
+    
+    
+      
+        <title>Installation - LuaRT Academy</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.85bb2934.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a6bdf11c.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="amber">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#installation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="LuaRT Academy" class="md-header__button md-logo" aria-label="LuaRT Academy" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LuaRT Academy
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Installation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="LuaRT Academy" class="md-nav__button md-logo" aria-label="LuaRT Academy" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82Z"/></svg>
+
+    </a>
+    LuaRT Academy
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          Getting Started
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Getting Started
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Installation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Installation
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#recommended-installation" class="md-nav__link">
+    Recommended installation
+  </a>
+  
+    <nav class="md-nav" aria-label="Recommended installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#download-the-installer" class="md-nav__link">
+    Download the installer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-the-installer" class="md-nav__link">
+    Run the installer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manual-installation" class="md-nav__link">
+    Manual installation
+  </a>
+  
+    <nav class="md-nav" aria-label="Manual installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-the-source-code" class="md-nav__link">
+    Get the source code
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compilation" class="md-nav__link">
+    Compilation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-setup" class="md-nav__link">
+    Additional setup
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../first_steps/" class="md-nav__link">
+        First steps
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="installation">Installation</h1>
+<p>There are two ways to install the official Lua<sup style="color:#FFB300">rt</sup> distribution on Windows:</p>
+<ul>
+<li>
+<p><strong>Lua<sup style="color:#FFB300">rt</sup> installer</strong><br />
+This approach involves downloading Lua<sup style="color:#FFB300">rt</sup> directly from the official website <a href="https://luart.org">https://www.luart.org</a>. This is the simplest and recommended installation method.</p>
+</li>
+<li>
+<p><strong>Manual installation</strong><br />
+This method offers more customization for advanced users. It involves downloading Lua<sup style="color:#FFB300">rt</sup> sources and manual compilation. This is a complex installation method and should not be recommended for newcomers.</p>
+</li>
+</ul>
+<h2 id="recommended-installation">Recommended installation</h2>
+<p>This method is rather simple, thanks to its specific Windows installer (built with Lua<sup style="color:#FFB300">rt</sup> !).</p>
+<h3 id="download-the-installer">Download the installer</h3>
+<p>Follow these steps to download the full installer:</p>
+<ul>
+<li>Open a browser window and navigate to the official website <a href="https://luart.org">https://www.luart.org</a> page and click on the "Download Lua<sup>rt</sup>" button.</li>
+<li>This will take you to the latest GitHub Release page.</li>
+<li>Scroll to the bottom and select either Windows x86 or x64 installer (depending on your Windows platform)</li>
+</ul>
+<div class="admonition question">
+<p class="admonition-title">Help on choosing installation version</p>
+<p>The Lua<sup style="color:#FFB300">rt</sup> installer comes in either 32-bit or 64-bit versions :<br />
+- On a 32-bit processor, you should choose the x86 installer. The installation will fail if you try to install the x64 version on a 32-bit processor. <br />
+- On a 64-bit processor, it is possible to use both installers, but it is highly recommended using the x64 one, as applications will run faster on a 64-bit system.  </p>
+<p>If you're not sure which one to choose, the 64-bit version is the best choice.</p>
+<p>Don't try to install both version on the same computer.</p>
+</div>
+<h3 id="run-the-installer">Run the installer</h3>
+<p>Once you have chosen and downloaded the right installer, open the downloaded ZIP file and double-click on the installer executable to show this window :</p>
+<figure>
+<p><img alt="LuaRT installer" src="install.png" /></p>
+</figure>
+<p>The installation process is simple :</p>
+<ul>
+<li>Click on the installation button to proceed</li>
+<li>You will be prompted to choose the installation directory</li>
+<li>Wait until the installation process is done</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Windows operating system prevents the application from starting</p>
+<p>Lua<sup>rt</sup> may be blocked by Microsoft Defender SmartScreen because executable is not EV certified (executables are not signed).   </p>
+<p>➡️If the blue window opens when running setup file, click on "More info" and then "Run anyway"  </p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Windows Defender places the installer in quarantine</p>
+<p>During virus scanning, Microsoft Defender may show a false positive result for LuaRT, since the setup executable is not signed with an EV certificate.  </p>
+<p>➡️Open Windows Defender<br />
+➡️Click on "Virus &amp; Threat Protection", select "All recent items", then select "Allow from the actions" drop-down menu. </p>
+</div>
+<p>Once installed, you will be able :</p>
+<ul>
+<li>
+<p>To launch Lua<sup>rt</sup> Studio and Quick<sup>rt</sup> from the Windows Start menu</p>
+</li>
+<li>
+<p>To uninstall Lua<sup>rt</sup> just open the Uninstall pane in Settings or in the Control Panel (depending on your Windows version)</p>
+</li>
+<li>
+<p>To launch Lua scripts with <code>.lua</code> or <code>.wlua</code> extensions from the Windows explorer</p>
+</li>
+</ul>
+<h2 id="manual-installation">Manual installation</h2>
+<p>This method is complex. Don't try to use it if you are not familiar with C/C++ compilation.</p>
+<h3 id="get-the-source-code">Get the source code</h3>
+<p>You can download the source code using the one of the following methods :</p>
+<ul>
+<li>
+<p>Go to the latest <a href="https://github.com/samyeyo/LuaRT/releases/latest">GitHub Release page</a>, scroll to the bottom and download the source code archive. Unpack it anywhere on your hard drive.</p>
+</li>
+<li>
+<p>Go to the <a href="https://github.com/samyeyo/LuaRT/">GitHub repository</a> and click on the green button "Code" then click on "Download ZIP" to download the latest source code archive. Unpack it anywhere on your hard drive.</p>
+</li>
+<li>
+<p>Open a <code>git</code> prompt or your preferred git-capable IDE and clone/fork the GitHub repository</p>
+</li>
+</ul>
+<h3 id="compilation">Compilation</h3>
+<p>Once downloaded, be sure to have a working C/C++ compiler (only Microsoft Visual C/C++ and Mingw-w64 8.1.0 are supported).
+To compile Lua<sup>rt</sup>, follow this steps :</p>
+<ul>
+<li>
+<p>Open a console prompt and be sure that your compiler can be executed from the command line</p>
+</li>
+<li>
+<p>Go to the folder that contains Lua<sup>rt</sup> source code, then enter the <code>\src</code> directory</p>
+</li>
+<li>
+<p>Start the build process by entering <code>make</code> (for Mingw-w64 compiler) or <code>nmake</code> (for Microsoft Visual C/C++ compiler)</p>
+</li>
+</ul>
+<p>If everything went right :</p>
+<ul>
+<li>
+<p>The Lua<sup>rt</sup> toolchain (interpreters, rtc compiler and  the <code>lua54.dll</code> runtime) are generated in the <code>/bin</code> folder</p>
+</li>
+<li>
+<p>The Lua<sup>rt</sup> library is generated in the <code>/lib</code> folder (either <code>liblua54.a</code> on Mingw-w64 or <code>lua54.lib</code> for Microsoft Visual C/C++)</p>
+</li>
+<li>
+<p>Lua<sup>rt</sup> additional modules will be generated in the <code>/modules</code> folder</p>
+</li>
+</ul>
+<h3 id="additional-setup">Additional setup</h3>
+<p>Once compiled, you should update your <code>PATH</code> environment variable with the location of the Lua<sup>rt</sup> <code>\bin</code> folder.  </p>
+<p>You should set file associations with <code>.lua</code> and <code>.wlua</code> extensions too, to be able to run Lua<sup>rt</sup> from the Windows explorer. </p>
+<p>If you want to use Quick<sup>rt</sup> and Lua<sup>rt</sup> Studio, you will need to follow these complementary steps :</p>
+<ul>
+<li>
+<p>Go to the <code>\src\core</code> folder </p>
+</li>
+<li>
+<p>Run command <code>make tools</code> (for Mingw-w64 compiler) or <code>nmake tools</code> (for Microsoft Visual C/C++ compiler)</p>
+</li>
+</ul>
+<p>And voila ! Your are now ready to develop your firts Lua<sup>rt</sup> applications !</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["toc.integrate", "navigation.path"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.b4d07000.min.js"></script>
+      
+    
+  </body>
+</html>
