@@ -5,11 +5,11 @@ This approach involves downloading Lua<sup style="color:#FFB300">rt</sup> direct
 
 * **Manual installation**  
 This method offers more customization for advanced users. It involves downloading Lua<sup style="color:#FFB300">rt</sup> sources and manual compilation. This is a complex installation method and should not be recommended for newcomers.
-#  
+  
 # Installation with Lua<sup style="color:#FFB300">rt</sup> installer
 
 This method is rather simple, thanks to its specific Windows installer (built with Lua<sup style="color:#FFB300">rt</sup> !).
-##  
+   
 ## Download the installer
 Follow these steps to download the full installer:
 
@@ -25,7 +25,7 @@ Follow these steps to download the full installer:
     If you're not sure which one to choose, the 64-bit version is the best choice.
     
     Don't try to install both version on the same computer.
-##  
+   
 ## Run the installer
 Once you have chosen and downloaded the right installer, open the downloaded ZIP file and double-click on the installer executable to show this window :
 
@@ -49,11 +49,11 @@ The installation process is simple :
       
     ➡️Open Windows Defender  
     ➡️Click on "Virus & Threat Protection", select "All recent items", then select "Allow from the actions" drop-down menu.  
-#  
+  
 # Manual installation
 
 This method is complex. Don't try to use it if you are not familiar with C/C++ compilation.
-##  
+   
 ## Download the Lua<sup style="color:#FFB300">rt</sup> source code
 You can download the source code using the one of the following methods :
 
@@ -62,7 +62,7 @@ You can download the source code using the one of the following methods :
 * Go to the [GitHub repository](https://github.com/samyeyo/LuaRT/) and click on the green button "Code" then click on "Download ZIP" to download the latest source code archive. Unpack it anywhere on your hard drive.
 
 * Open a `git` prompt or your preferred git-capable IDE and clone/fork the GitHub repository
-##  
+  
 ## Compile Lua<sup style="color:#FFB300">rt</sup>
 Once downloaded, be sure to have a working C/C++ compiler (only Microsoft Visual C/C++ and Mingw-w64 8.1.0 are supported).
 To compile Lua^rt^, follow this steps :
@@ -80,7 +80,7 @@ If everything went right :
 * The Lua<sup>rt</sup> library is generated in the `/lib` folder (either `liblua54.a` on Mingw-w64 or `lua54.lib` for Microsoft Visual C/C++)
 
 * Lua<sup>rt</sup> additional modules will be generated in the `/modules` folder
-##  
+  
 ## Additional setup
 Once compiled, you should update your `PATH` environment variable with the location of the Lua<sup>rt</sup> `\bin` folder.  
   
