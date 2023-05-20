@@ -1,4 +1,4 @@
-site-name: LuaRT Academy
+site_name: LuaRT Academy
 
 theme:
   name: material
