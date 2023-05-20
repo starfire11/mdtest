@@ -28,7 +28,5 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Lua<sup>rt</sup> Installation:
-    - Using Lua<sup>rt</sup> installer: installation/index.md
-    - Manual installation: installation/manual.md
   - Getting Started: getting-started/index.md
+    - Installation: installation/index.md
