@@ -28,5 +28,6 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Getting Started: getting-started/index.md
+  - Getting Started: 
+    - getting-started/index.md
     - Installation: installation/index.md
