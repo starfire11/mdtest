@@ -48,7 +48,15 @@ The installation process is simple :
     During virus scanning, Microsoft Defender may show a false positive result for LuaRT, since the setup executable is not signed with an EV certificate.  
       
     ➡️Open Windows Defender  
-    ➡️Click on "Virus & Threat Protection", select "All recent items", then select "Allow from the actions" drop-down menu.  
+    ➡️Click on "Virus & Threat Protection", select "All recent items", then select "Allow from the actions" drop-down menu. 
+
+Once installed, you will be able :
+
+* To launch Lua<sup>rt</sup> Studio and Quick<sup>rt</sup> from the Windows Start menu
+
+* To uninstall Lua^rt^ just open the Uninstall pane in Settings or in the Control Panel (depending on your Windows version)
+
+* To launch Lua scripts with `.lua` or `.wlua` extensions from the Windows explorer
   
 # Manual installation
 
@@ -69,7 +77,7 @@ To compile Lua^rt^, follow this steps :
 
 * Open a console prompt and be sure that your compiler can be executed from the command line
 
-* Go to the folder that contains Lua<sup>rt</sup> source code
+* Go to the folder that contains Lua<sup>rt</sup> source code, then enter the `\src` directory
 
 * Start the build process by entering `make` (for Mingw-w64 compiler) or `nmake` (for Microsoft Visual C/C++ compiler)
 
@@ -85,3 +93,11 @@ If everything went right :
 Once compiled, you should update your `PATH` environment variable with the location of the Lua<sup>rt</sup> `\bin` folder.  
   
 You should set file associations with `.lua` and `.wlua` extensions too, to be able to run Lua<sup>rt</sup> from the Windows explorer. 
+  
+If you want to use Quick<sup>rt</sup> and Lua<sup>rt</sup> Studio, you will need to follow these complementary steps :
+  
+* Go to the `\src\core` folder 
+
+* Run command `make tools` (for Mingw-w64 compiler) or `nmake tools` (for Microsoft Visual C/C++ compiler)
+
+And voila ! Your are now ready to develop your firts Lua<sup>rt</sup> applications !
