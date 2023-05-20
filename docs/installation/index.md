@@ -7,7 +7,7 @@ This approach involves downloading Lua<sup style="color:#FFB300">rt</sup> direct
 * **Manual installation**  
 This method offers more customization for advanced users. It involves downloading Lua<sup style="color:#FFB300">rt</sup> sources and manual compilation. This is a complex installation method and should not be recommended for newcomers.
   
-## Installation with Lua<sup style="color:#FFB300">rt</sup> installer
+## Recommended installation
 
 This method is rather simple, thanks to its specific Windows installer (built with Lua<sup style="color:#FFB300">rt</sup> !).
    
@@ -63,7 +63,7 @@ Once installed, you will be able :
 
 This method is complex. Don't try to use it if you are not familiar with C/C++ compilation.
    
-### Download the Lua<sup style="color:#FFB300">rt</sup> source code
+### Get the source code
 You can download the source code using the one of the following methods :
 
 * Go to the latest [GitHub Release page](https://github.com/samyeyo/LuaRT/releases/latest), scroll to the bottom and download the source code archive. Unpack it anywhere on your hard drive.
@@ -72,7 +72,7 @@ You can download the source code using the one of the following methods :
 
 * Open a `git` prompt or your preferred git-capable IDE and clone/fork the GitHub repository
   
-### Compile Lua<sup style="color:#FFB300">rt</sup>
+### Compilation
 Once downloaded, be sure to have a working C/C++ compiler (only Microsoft Visual C/C++ and Mingw-w64 8.1.0 are supported).
 To compile Lua^rt^, follow this steps :
 
