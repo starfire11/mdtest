@@ -1,4 +1,6 @@
-![LuaRT Academy](Academy.png){ align=left }
+#  
+![LuaRT Academy](Academy.png){ align=left } 
+  
   
 Welcome to the Lua<sup style="color:#FFB300">rt</sup> academy, a community-maintained repository of Lua<sup style="color:#FFB300">rt</sup> tutorials, resources, and contributions. This website provides additional information made by and for users of the Windows programming framework for Lua, besides the official [Lua<sup style="color:#FFB300">rt</sup> documentation](https://luart.org/doc/index.html).
 
